@@ -127,7 +127,9 @@ code { background: var(--sand); padding: 0 .3em; border-radius: 4px; }
 .zone--best .zone__name { font-size: 3.2rem; }
 .zone__score { font-weight: 600; color: var(--teal); font-size: 1.1rem; }
 .zone__spots { margin-left: auto; }
-.sessions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1rem; }
+.sessions { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: .8rem; margin-top: 1rem; }
+.sessions .metrics { grid-template-columns: 1fr; gap: .15rem; }
+.sessions .metrics dd { white-space: nowrap; }
 .session { border-radius: 12px; padding: 1rem 1.1rem; background: var(--foam); border-top: 5px solid #C9D2DC; }
 .session--ideal { border-top-color: #2E9E5B; }
 .session--favorable { border-top-color: #E0A526; }
@@ -137,6 +139,9 @@ code { background: var(--sand); padding: 0 .3em; border-radius: 4px; }
 .session__spot { font-family: var(--display); font-size: 1.9rem; letter-spacing: .03em; margin: .1rem 0 0; }
 .session__spot a { color: var(--deep); text-decoration: none; }
 .session__when { font-weight: 600; margin: 0 0 .3rem; }
+.session--info { background: #fff; border: 1px dashed #C9D2DC; border-top-width: 5px; border-top-style: solid; }
+.session--info .session__spot { font-size: 1.6rem; }
+.session__ref { display: inline-block; margin-left: .3rem; padding: .05rem .45rem; border-radius: 999px; background: #E8EEF3; color: var(--muted); font-size: .62rem; letter-spacing: .05em; vertical-align: middle; }
 .session__alt { font-size: .82rem; color: var(--muted); margin: .6rem 0 0; }
 
 /* ---- Lista de spots ---- */
