@@ -139,9 +139,6 @@ code { background: var(--sand); padding: 0 .3em; border-radius: 4px; }
 .session__spot { font-family: var(--display); font-size: 1.9rem; letter-spacing: .03em; margin: .1rem 0 0; }
 .session__spot a { color: var(--deep); text-decoration: none; }
 .session__when { font-weight: 600; margin: 0 0 .3rem; }
-.session--info { background: #fff; border: 1px dashed #C9D2DC; border-top-width: 5px; border-top-style: solid; }
-.session--info .session__spot { font-size: 1.6rem; }
-.session__ref { display: inline-block; margin-left: .3rem; padding: .05rem .45rem; border-radius: 999px; background: #E8EEF3; color: var(--muted); font-size: .62rem; letter-spacing: .05em; vertical-align: middle; }
 .session__alt { font-size: .82rem; color: var(--muted); margin: .6rem 0 0; }
 
 /* ---- Lista de spots ---- */
@@ -181,6 +178,9 @@ code { background: var(--sand); padding: 0 .3em; border-radius: 4px; }
 .grid td.tide .tide-curve { position: absolute; inset: 0; width: 100%; height: 100%; }
 .grid td.tide .tide-curve path { fill: rgba(25, 125, 200, .55); }
 .grid td.tide .tide-value { position: relative; display: block; font-weight: 600; color: var(--deep); }
+.grid td.tide .tide-extreme { position: absolute; left: 50%; bottom: .2rem; transform: translateX(-50%); padding: 0 .3rem; border-radius: .6rem; background: rgba(255,255,255,.9); font-size: .68rem; font-weight: 700; color: var(--deep); white-space: nowrap; }
+.tide-times { margin: -.2rem 0 .5rem; font-size: .85rem; color: var(--deep); }
+.tide-times .tide-time { margin-left: .9rem; }
 .veto-mark { color: #B42B2B; }
 .small-note { font-size: .8rem; margin-top: .4rem; }
 
